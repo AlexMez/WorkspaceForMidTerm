@@ -1,0 +1,14 @@
+Harry Potter and the Curse,J.K.Rowling,Available,NA
+Red Rain,R.L.Stine,Available,NA
+Sixteenth Seduction,James Patterson,Available,NA
+Thirteen Reasons Why,Jay Asher,Available,NA
+The Third Wave,Steve Case,Available,NA
+Cat and the Hat,Dr.Seuss,Available,NA
+Green Eggs and Ham,Dr.Seuss,Available,NA
+How the Grinch Stole Christmas,Dr.Seuss,Available,NA
+Anything is Possible,Elizabeth Strout,Available,NA
+The Secrets of My Life,Caitlyn Jenner,Available,NA
+Come Sundown,Nora Roberts,Available,NA
+The Black Book,James Patterson,Available,NA
+Hundred Years of Solitude,Gabiel Garcia Marquez,Available,NA
+Gone Girl,Gillian Flynn,Checkout,NA
