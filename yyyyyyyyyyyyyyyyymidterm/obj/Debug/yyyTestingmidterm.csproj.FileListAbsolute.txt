@@ -1,0 +1,6 @@
+C:\Users\alex\Documents\Visual Studio 2015\Projects\yyyyyyyyyyyyyyyyymidterm\yyyyyyyyyyyyyyyyymidterm\bin\Debug\yyyyyyyyyyyyyyyyymidterm.exe.config
+C:\Users\alex\Documents\Visual Studio 2015\Projects\yyyyyyyyyyyyyyyyymidterm\yyyyyyyyyyyyyyyyymidterm\bin\Debug\yyyyyyyyyyyyyyyyymidterm.exe
+C:\Users\alex\Documents\Visual Studio 2015\Projects\yyyyyyyyyyyyyyyyymidterm\yyyyyyyyyyyyyyyyymidterm\bin\Debug\yyyyyyyyyyyyyyyyymidterm.pdb
+C:\Users\alex\Documents\Visual Studio 2015\Projects\yyyyyyyyyyyyyyyyymidterm\yyyyyyyyyyyyyyyyymidterm\obj\Debug\yyyTestingmidterm.csprojResolveAssemblyReference.cache
+C:\Users\alex\Documents\Visual Studio 2015\Projects\yyyyyyyyyyyyyyyyymidterm\yyyyyyyyyyyyyyyyymidterm\obj\Debug\yyyyyyyyyyyyyyyyymidterm.exe
+C:\Users\alex\Documents\Visual Studio 2015\Projects\yyyyyyyyyyyyyyyyymidterm\yyyyyyyyyyyyyyyyymidterm\obj\Debug\yyyyyyyyyyyyyyyyymidterm.pdb

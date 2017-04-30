@@ -16,26 +16,18 @@ namespace yyyyyyyyyyyyyyyyymidterm
 
             List<Books> Catalogue = GetList();
 
+            Return(Catalogue);
+
+            Checkout(Catalogue);
+
             ////add more books and test
 
             //Catalogue.Add(new Books("my so called life", "timmy", "available", "NA"));
             //Catalogue.Add(new Books("crap my pants", "timmy", "available", "NA"));
             //Catalogue.Add(new Books("pooped onmy shoe", "timmy", "available", "NA"));
 
-            string Checkout = Console.ReadLine().ToLower();
 
-            foreach (var item in Catalogue)
-            {
-                string Authorlower = item.BAuthor.ToLower();
-                if (Authorlower == Checkout)
-                {
-                    item.BStatus = "Checkout";
-                    //item.BDueDate = DateTime()
-                }
-                
-            }
 
-            WriteToText(Catalogue);
 
             //Console.Write("Search for a Book by author: ");
             //string Search = Console.ReadLine().ToLower();
@@ -82,6 +74,76 @@ namespace yyyyyyyyyyyyyyyyymidterm
 
 
 
+        }
+
+        public static void Return(List<Books> inputCatalogue)
+        {
+            Console.Write("Return: ");
+            string ItemToReturn = Console.ReadLine().ToLower();
+            DateTime myDateTime = new DateTime();
+            myDateTime = DateTime.Now;
+            int count = 0;
+            foreach (var item in inputCatalogue)
+            {
+                string Titlelower = item.BTitle.ToLower();
+                if (Titlelower == ItemToReturn && !(item.BStatus == "Avaiable"))
+                {
+                    item.BStatus = "Available";
+                    item.BDueDate = "N/A";
+                    Console.WriteLine($"thank you for returning {item.BTitle}.");
+                    //if (Convert.ToDouble(item.BDueDate) > Convert.ToDouble(myDateTime))
+                    //{
+                    //    Console.WriteLine("your item is late you owe us money");
+                    //}
+                }
+                else
+                {
+                    count++;
+                }
+
+            }
+            if (count == inputCatalogue.Count)
+            {
+                Console.WriteLine("that book is already returned or not in our system");
+            }
+
+            WriteToText(inputCatalogue);
+
+
+        }
+
+
+        
+        public static void Checkout(List<Books> inputCatalogue)
+        {
+            Console.Write("Check out: ");
+            string ItemToCheckOut = Console.ReadLine().ToLower();
+            DateTime myDateTime = new DateTime();
+            myDateTime = DateTime.Now;
+            int count = 0;
+            foreach (var item in inputCatalogue)
+            {
+                string Titlelower = item.BTitle.ToLower();
+                if (Titlelower == ItemToCheckOut && !(item.BStatus == "Checked-out"))
+                {
+                    item.BStatus = "Checked-out";
+                    item.BDueDate = myDateTime.AddDays(14).ToShortDateString();
+                    Console.WriteLine($"{item.BTitle} is checked out.");
+                    Console.WriteLine($"and is due on {item.BDueDate}");
+                }
+                else
+                {
+                    count++;
+                }
+
+            }
+            if (count == inputCatalogue.Count)
+            {
+                Console.WriteLine("not available");
+            }
+
+            WriteToText(inputCatalogue);
+            
         }
 
         public static List<Books> GetList()
